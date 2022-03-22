@@ -32,7 +32,7 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   2. Which of the two uses a closure? How can you tell?
   
   3. In what scenario would the counter1 code be preferable? In what scenario would 
-     counter2 be better?  
+     counter2 be better?
 */
 
 // counter1 code
@@ -52,6 +52,15 @@ function counter2() {
   return count++;
 }
 
+/*
+1. counter1 is a nested scope with a closure.
+
+2. counter1 contains a closure since the nested function can access variables in the outer scope,
+   but not from global scope. counter2 is a function that access variables from the global scope.
+
+   3. counter1 is preferable when the same function is needed for different items.
+   counter2 is preferable when used for one specific item.
+*/
 
 /* ⚾️⚾️⚾️ Task 2: inning() ⚾️⚾️⚾️
 Use the inning function below to do the following:

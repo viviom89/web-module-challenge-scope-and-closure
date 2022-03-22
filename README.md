@@ -82,9 +82,16 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+
+//function() is a closure since it "captures" the variables from its lexical scope. 
+
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+
+//Dan's name will always be the same, however, the number on the dice will change.
+
 c. What is the lexical scope of `newRoll`? 
 
+//`newRoll` is within the scope of the function personalDice(name).
 
 ### Task 3 - Stretch Goals
 
